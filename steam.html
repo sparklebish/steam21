@@ -1,0 +1,21 @@
+<!doctype HTML>
+<html>
+<script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.7.8/aframe/build/aframe-ar.js"></script>
+  <body>
+    <a-scene embedded arjs>
+      <a-marker preset="hiro">
+          <a-box color="violet" animation="property:rotation; to: 0 0 360; loop: true;"></a-box>
+        <a-text position="-0.5 1 -.4" rotation="-90 0 0" scale="0.5" value="Isabella Marca" color="#333"></a-text>
+  
+  
+          
+          <a-text position="-0.5 1 .2" rotation="-90 0 0" scale=".4" value="imarca@idyllwildarts.org" color="#333"></a-text>
+      
+        <a-img src="https://media.tenor.com/images/9ee6274563f8ce4a3a53c93d083423a7/tenor.gif" rotation="-90 0 0"></a-img>
+        
+          </a-marker>
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>
